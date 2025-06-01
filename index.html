@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form Biodata</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="notification" class="hidden"></div>
+
+    <h1>Form Biodata Lengkap</h1>
+
+    <form id="biodataForm">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required />
+
+      <label for="prodi">Program Studi:</label>
+      <select id="prodi" name="prodi" required>
+        <option value="">-- Pilih Prodi --</option>
+        <option value="Informatika">Informatika</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+        <option value="Teknologi Informasi">Teknologi Informasi</option>
+      </select>
+
+      <label for="tanggal">Tanggal Lahir:</label>
+      <input type="date" id="tanggal" name="tanggal" required />
+
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap..." required></textarea>
+
+      <label>Jenis Kelamin:</label>
+      <div class="gender-group">
+        <label><input type="radio" name="gender" value="Laki-laki" required /> Laki-laki</label>
+        <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+      </div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="contoh@domain.com" required />
+
+      <label for="telepon">Nomor Telepon:</label>
+      <input type="tel" id="telepon" name="telepon" placeholder="08123456789" pattern="[0-9]{10,13}" title="Masukkan nomor telepon 10-13 digit" required />
+
+      <label>Hobi:</label>
+      <div class="hobi-group">
+        <label><input type="checkbox" name="hobi" value="Membaca" /> Membaca</label>
+        <label><input type="checkbox" name="hobi" value="Olahraga" /> Olahraga</label>
+        <label><input type="checkbox" name="hobi" value="Musik" /> Musik</label>
+        <label><input type="checkbox" name="hobi" value="Traveling" /> Traveling</label>
+      </div>
+      <button type="button" onclick="tampilkanData()">Tampilkan</button>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

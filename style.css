@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffe6f0; 
+  color: #4a4a4a;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background-color: #fff0f5; 
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(255, 192, 203, 0.4);
+  border: 2px solid #ffcce0;
+}
+
+h1 {
+  text-align: center;
+  color: #d63384; 
+  margin-bottom: 25px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #b30059;
+}
+
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #ffb3d9;
+  background-color: #fff5f9;
+  font-size: 1em;
+  box-sizing: border-box;
+  font-family: inherit;
+  resize: vertical; 
+}
+
+
+.gender-group label,
+.hobi-group label {
+  font-weight: normal;
+  margin-right: 15px;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+.gender-group input[type="radio"],
+.hobi-group input[type="checkbox"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #ff99cc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1em;
+}
+
+button:hover {
+  background-color: #ff66b2;
+}
+
+
+#output {
+  margin-top: 25px;
+  background-color: #ffe6f0;
+  border-left: 5px solid #ffb3d9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#output h2 {
+  color: #d63384;
+}
